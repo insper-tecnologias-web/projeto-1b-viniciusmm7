@@ -1,15 +1,16 @@
 from django.shortcuts import render, redirect
 from .models import Note
 
+
 def index(request):
     if request.method == 'POST':
         title = request.POST.get('titulo')
         content = request.POST.get('detalhes')
+        # TAREFA: Utilize o title e content para criar um novo Note no banco de dados
 
-        # Se estiver vazio, não adiciona no banco de dados
-        if title == '' or content == '':
+        if not title or not content:
             return redirect('index')
-
+        
         note = Note(title=title, content=content)
         note.save()
         return redirect('index')

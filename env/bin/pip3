@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/vinicius/Desktop/Insper/Quarto Semestre/TecWeb/Aula 04/env/bin/python3" "$0" "$@"
+'''exec' "/home/vinicius/Desktop/Insper/Quarto Semestre/TecWeb/projeto-1b-viniciusmm7/env/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
